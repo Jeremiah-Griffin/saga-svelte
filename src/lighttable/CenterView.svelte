@@ -19,6 +19,6 @@
 <style lang="scss">
   @use '@material/textfield';
     .queryBar{
-        @include textfield.core-styles(   );
+        @include textfield.core-styles();
     }
 </style>
