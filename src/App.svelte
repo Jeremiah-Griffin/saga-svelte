@@ -4,12 +4,9 @@
 </script>
 
 <main>
-
-
+  <div class="appbar"><AppBar/></div>
   <div class="grid-container">
-    <div class="appbar"><AppBar/></div>
     <div class="centerv"><CenterView/></div>
-
   </div>
 </main>
 
