@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@material/textfield": "^14.0.0",
+    "@material/top-app-bar": "^14.0.0",
     "svelte-material-ui": "^6.1.3"
   }
 }

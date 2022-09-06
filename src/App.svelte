@@ -1,4 +1,4 @@
-<script lang="ts">
+<script type="module" lang="ts">
   import AppBar from './utils/AppBar.svelte'
   import CenterView from "./lighttable/CenterView.svelte";
 </script>

@@ -1,33 +1,26 @@
-<script lang="ts">
-    import { Input } from '@smui/textfield';
-    import Paper from '@smui/paper';
-    import Fab from '@smui/fab';
-    import { Icon } from '@smui/common';
+<script type="module" lang="ts">
+    import {MDCTextField} from '@material/textfield';
 
-
-    let queryText = "";
+    const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 
      function printText(txt) {
          console.log(txt)
      }
 </script>
-<div>
-    <Paper class="solo-paper" elevation={6}>
-        <Icon class="material-icons">search</Icon>
-        <Input
-                bind:queryText
-                placeholder="Search"
-                class="solo-input"
-        />
-    </Paper>
-    <Fab
-            on:click={printText(queryText)}
-            disabled={queryText === ''}
-            color="primary"
-            mini
-            class="solo-fab"
-    >
-        <Icon class="material-icons">arrow_forward</Icon>
-    </Fab>
-</div>
 
+<label class="mdc-text-field mdc-text-field--filled">
+    <span class="mdc-text-field__ripple"></span>
+    <span class="mdc-floating-label" id="my-label-id">Hint text</span>
+    <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+    <span class="mdc-line-ripple"></span>
+</label>
+
+
+<style lang="scss">
+  @use "@material/floating-label/mdc-floating-label";
+  @use "@material/line-ripple/mdc-line-ripple";
+  @use "@material/notched-outline/mdc-notched-outline";
+  @use "@material/textfield";
+
+  @include textfield.core-styles;
+</style>
