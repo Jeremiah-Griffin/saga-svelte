@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "prepare": "smui-theme compile %sveltekit.assets%/smui.css -i src/theme"
+    "prepare": "smui-theme compile style/smui.css -i src/theme"
   },
   "devDependencies": {
     "@smui/textfield": "^6.1.0",
