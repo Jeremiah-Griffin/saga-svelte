@@ -11,13 +11,12 @@
 </main>
 
 <style lang="scss">
-  .flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
+  :global(body) {
+    margin: 0;
   }
-
+  main {
+    height: 500vh; // to test scrolling
+  }
   .grid-container{
     display: grid;
     grid-template-areas:
@@ -28,4 +27,10 @@
   .menul {grid-area: menul}
   .centerv {grid-area: centerv}
   .menur{grid-area: menur}
+  .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
 </style>
